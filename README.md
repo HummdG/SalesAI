@@ -8,8 +8,10 @@ Find clinics which offer the treatment, usually choose clinics which offer expen
 Check the clinic websites, the two main criteria used to determine whether the clinics qualify are:
 1.	The quality of the website, i.e., whether the website is made professionally or not, can be checked by verifying the domain name and checking if it contains a web builder’s name, like wix.
 2.	Check if the clinic has a team.
+ 
 He usually contacts 60 customers a day, where 20 customers are contacted in an hour, and the conversion rate of potential customers to actual clients is 3 a day. 
-The most time-consuming aspect of his day is the actual finding of the customers. 
+*The most time-consuming aspect of his day is the actual finding of the customers.* 
+
 Therefore, the steps are:
 1.	Build a simple webcrawler using BeautifulSoup, that obtains all websites of clinics that offer the treatment in question.
 2.	Build an LLM empowered webscraper that goes through the obtained websites and qualifies them.
