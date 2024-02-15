@@ -3,6 +3,7 @@ Sales enhancement through AI for finding treatment clinics
 
 ## Branching Rules
 Initial Branch: {Name}Branch
+
 Subsequent branches will be named after the features implemented
 
 ## Notes from 1st Meeting
