@@ -24,6 +24,7 @@ Therefore, the steps are:
 3.	Upload all the relevant data from the qualified websites into an excel file.
 4.	Wrap this in a nice UI using streamlit or similar libraries.
 5.	Deploy.
+6.	
 Other technical aspects and work split will be discussed later.
 Obviously, this shouldn’t be “that” time consuming, but we will pitch a 2-month project for a currently defined price of about £6000. 
 Need to get in touch with Sam’s brother. 
