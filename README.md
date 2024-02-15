@@ -10,7 +10,8 @@ Check the clinic websites, the two main criteria used to determine whether the c
 2.	Check if the clinic has a team.
  
 He usually contacts 60 customers a day, where 20 customers are contacted in an hour, and the conversion rate of potential customers to actual clients is 3 a day. 
-*The most time-consuming aspect of his day is the actual finding of the customers.* 
+
+**The most time-consuming aspect of his day is the actual finding of the customers.** 
 
 Therefore, the steps are:
 1.	Build a simple webcrawler using BeautifulSoup, that obtains all websites of clinics that offer the treatment in question.
