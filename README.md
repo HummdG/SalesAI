@@ -1,6 +1,10 @@
 # SalesAI
 Sales enhancement through AI for finding treatment clinics
 
+## Branching Rules
+Initial Branch: {Name}Branch
+Subsequent branches will be named after the features implemented
+
 ## Notes from 1st Meeting
 Choose a treatment, e.g. Emsculpt
 
@@ -22,4 +26,5 @@ Therefore, the steps are:
 Other technical aspects and work split will be discussed later.
 Obviously, this shouldn’t be “that” time consuming, but we will pitch a 2-month project for a currently defined price of about £6000. 
 Need to get in touch with Sam’s brother. 
+
 
