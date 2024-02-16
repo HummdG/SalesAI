@@ -41,6 +41,7 @@ def get_news_articles(api_key, cx, treatment, num_results):
 API_KEY = "AIzaSyCjOxGey7Xlb_kaNp67TvPxS-t78XymXNI"
 SEACH_ENGINE_ID = "33d3c2b2a85ff4505"
 treatment = input("Treatment Name: ")
+location = input("Enter the location of interest: ")
 num_results = int(input("Enter the number of results you want: "))
 print("---------------------------------------------")
-get_news_articles(API_KEY, SEACH_ENGINE_ID, treatment, num_results)
+get_news_articles(API_KEY, SEACH_ENGINE_ID, treatment + location, num_results)
