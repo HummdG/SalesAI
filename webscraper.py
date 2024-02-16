@@ -7,7 +7,7 @@ from langchain.chains import create_extraction_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import pprint
 
-llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0613")
+llm = ChatOpenAI(temperature=0.5, model="gpt-3.5-turbo-0613")
 
 def extract(content: str, schema: dict):
     return create_extraction_chain(schema=schema, llm=llm).run(content)
