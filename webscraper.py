@@ -1,8 +1,9 @@
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
-from langchain.document_loaders import AsyncChromiumLoader
-from langchain.document_transformers import BeautifulSoupTransformer
-from langchain.chat_models import ChatOpenAI
+from langchain_community.document_loaders import AsyncChromiumLoader
+from langchain_community.document_transformers import BeautifulSoupTransformer
+# from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.chains import create_extraction_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import pprint
@@ -10,7 +11,7 @@ import pprint
 llm = ChatOpenAI(temperature=0.5, model="gpt-3.5-turbo-0613")
 
 def extract(content: str, schema: dict):
-    return create_extraction_chain(schema=schema, llm=llm).run(content)
+    return create_extraction_chain(schema=schema, llm=llm).invoke(content)
 
 schema = { #needed to only extract the required information from the webpage
     "properties": {
