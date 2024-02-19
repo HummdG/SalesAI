@@ -2,7 +2,7 @@ import requests
 import openai
 
 # Set up your OpenAI API key
-openai.api_key = ''
+openai.api_key = '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'
 
 def spell_check(text):
     # Define the prompt with the text and desired completion format
@@ -70,16 +70,17 @@ SEACH_ENGINE_ID = "33d3c2b2a85ff4505"
 treatment = input("Treatment Name: ")
 location = input("Enter the location of interest: ")
 
-# corrected_text = spell_check(treatment + " " +location)
-# semicolon_index = corrected_text.find(':')  # Find the index of the semicolon
-# processed_query = ''
-# if semicolon_index != -1:  # Check if semicolon is found
-#     processed_quey = corrected_text[semicolon_index + 1:].strip().strip("'") # Extract substring after semicolon and strip leading/trailing whitespace
-
+corrected_text = spell_check(treatment + " " + location)
+semicolon_index = corrected_text.find(':')  # Find the index of the semicolon
+processed_query = ''
+if semicolon_index != -1:  # Check if semicolon is found
+    processed_query = corrected_text[semicolon_index + 1:].strip().strip("'") # Extract substring after semicolon and strip leading/trailing whitespace
+else:
+    processed_query = corrected_text.strip("'")
 num_results = int(input("Enter the number of results you want: "))
-# print("Showing results for: ", processed_query)
+print("Showing results for: ", processed_query)
 print("---------------------------------------------")
-get_news_articles(API_KEY, SEACH_ENGINE_ID, treatment + " " + location, num_results)
+get_news_articles(API_KEY, SEACH_ENGINE_ID, processed_query, num_results)
 
 
 # API_KEY = "AIzaSyCjOxGey7Xlb_kaNp67TvPxS-t78XymXNI"
