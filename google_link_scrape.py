@@ -1,7 +1,7 @@
 import requests
 import openai
 
-# Set up your OpenAI API key
+# no key
 openai.api_key = ''
 
 def spell_check(text):
