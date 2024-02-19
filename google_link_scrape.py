@@ -1,8 +1,8 @@
 import requests
 import openai
 
-# Set up your OpenAI API key
-openai.api_key = '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'
+# no key
+openai.api_key = ''
 
 def spell_check(text):
     # Define the prompt with the text and desired completion format
