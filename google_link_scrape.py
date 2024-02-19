@@ -2,7 +2,7 @@ import requests
 import openai
 
 # no key
-openai.api_key = ''
+openai.api_key = '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'
 
 def spell_check(text):
     # Define the prompt with the text and desired completion format
@@ -10,7 +10,7 @@ def spell_check(text):
     The text will contain medical treatments like 'emsculpt' or 'hair loss'. So if someone types
     'haior loss' or something like that you will know that it is 'hair loss'. If someone types 
     'emsculpy' or something like that you will know it is the common non invasive muscle building 
-    treatment called 'emsculpt'. Only fix the text the user gives, but the conetxt of the text 
+    treatment called 'emsculpt'. Only fix the text the user gives, but the context of the text 
     will ALWAYS be medical treatments. Do not add any additional information. Your Output should ALWAYS
     be 'The corrected text is: 'corrected_text'"""
 
