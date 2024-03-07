@@ -1,4 +1,3 @@
-
 #### TEST 1 ####
 # Treatment Name: emsculpt 
 # Enter the location of interest: london
@@ -49,7 +48,7 @@ def scraper(api_key, cx, treatment, num_results):
             print(f"Failed to retrieve web links. Status code: {response.status_code}")
             break
 
-API_KEY = "AIzaSyCjOxGey7Xlb_kaNp67TvPxS-t78XymXNI"
+API_KEY = "AIzaSyBQuuWAPbpEhv0gXtoRv4TwaFeHHU6fmlc"
 SEACH_ENGINE_ID = "33d3c2b2a85ff4505"
 treatment = input("Treatment Name: ")
 location = input("Enter the location of interest: ")
